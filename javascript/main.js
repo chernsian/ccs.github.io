@@ -42,10 +42,6 @@ $(document).ready(function() {
         e.preventDefault();
         $.scrollTo($("#about"), 1000);
     });
-    $("#nav-portfolio").click(function(e) {
-        e.preventDefault();
-        $.scrollTo($("#portfolio"), 1000);
-    });
     $("#nav-contact").click(function(e) {
         e.preventDefault();
         $.scrollTo($("#contact"), 1000);
