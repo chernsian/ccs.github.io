@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:400,700,300|Quattrocento");
+$parentbackground: #000000;
+$childbackground: #4f2ead;
+$word: #ff6c00;
+$title: #dfe5ea;
+
+html {
+    position: relative;
+    height: 100%;
+}
+
+body{
+    background: $parentbackground;
+    height: 100%;   
+    margin: 0;
+    overflow: hidden;
+}
+
+#container-fluid {
+    padding: 60px 15px 0; 
+    height: 100%;
+}
+
+#container-fluid .text-muted {
+    margin: 20px 0; 
+}
+
+
+#main-nav {
+    background-color:$parentbackground;
+    overflow: hidden;
+    transition: .25s;
+    top: 0;
+    font-size: 22px; 
+}
+
+#main-nav a{
+    float: right;
+    color: $word;
+    font-family: "Comfortaa", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    padding: 12px 40px;
+    display: block;
+    transition: all .2s ease-in-out;
+}
+
+#main-nav a:hover{
+   //  border: $title;
+   //  border-style: solid;
+   //  border-radius: 50px;
+   transform: scale(1.5);
+}
+
+.content{
+    padding: 16px;
+}
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.sticky + .content {
+    padding-top: 60px;
+  }
+
+.cover {
+    padding: 10% 0 10% 0;
+ }
+ .cover .top {
+    padding: 15% 0 10% 0;
+    height: 100vh;
+    display: flex;
+    background-color: $parentbackground;
+ }
+ .cover .bottom {
+    padding: 10% 0 10% 0;
+ }
+
+ .headline {
+    padding-top: 6.25em;
+ }
+
+ h1 {
+    color: $title;
+    font-family: "Comfortaa", Helvetica, Arial, sans-serif;
+}
+
+p {
+    color: $word;
+    font-family: "Quattrocento", sans-serif;
+}
+
+//about page begin
+#about {
+    background-color: $parentbackground;
+    height: 100%;
+ }
+
+#about h2{
+    color: $title;
+    font-family: "Comfortaa", Helvetica, Arial, sans-serif;
+}
+
+#about p {
+    font-family: "Comfortaa", Helvetica, Arial, sans-serif;
+}
+
+ 
+ .profile-img {
+    margin-bottom: 15px;
+    width: 120px;
+    border-radius: 60px;
+ }
+ 
+ .about,
+ .about-info,
+ .about-tools,
+ .about-last {
+    padding: 4% 10% 1% 10%;
+    font-size: 1.25em;
+ }
+ .about-tools {
+    padding-top: 4.375em;
+    font-weight: 700;
+    font-size: 1.5em;
+ }
+ @media screen and (min-width: 992px) {
+    .about-tools {
+       padding-top: 5.625em;
+    }
+ }
+ .about-tools ul:first-child {
+    padding-left: 0px;
+ }
+ .about-tools ul {
+    color: $title;
+    list-style: none;
+ }
+ .about-tools ul li {
+    padding-top: 0.75em;
+ }
+ .about-last {
+    padding-top: 3.125em;
+    padding-bottom: 0;
+    font-size: 1.125em;
+ }
+ @media screen and (min-width: 992px) {
+    .about-last {
+       padding-top: 0;
+    }
+ }
+ .about-last p {
+    color: #25b79f;
+ }
+//about page end
+
+//portfolio page begin
+
+#portfolio {
+    background-color: $parentbackground;
+    height: 100%;
+}
+
+#portfolio h2 {
+    color: $title;
+}
+
+//portfolio page end
+
+//contact page begin
+#contact {
+    background-color: $parentbackground;
+    height: 100%;
+}
+
+#contact h2{
+    color: $title;
+}
+
+#contact p {
+   padding-top: 2%;
+}
+
+#contact p a{
+   color: $title;
+   text-decoration: none;
+   transition: all .2s ease-in-out;
+}
+
+#contat p a:hover {
+   
+   transition: scale(2);
+}
+
+
+.contact-social-icons p {
+   color: $title;
+}
+
+.contact-social-icons ul a li{
+   color: $word;
+   list-style: none;
+   transition: all .2s ease-in-out;
+}
+
+.contact-social-icons ul a li:hover {
+   transform: scale(2);
+}
+
+.contact-social-icons ul a li {
+   display: inline-block;
+   padding: 4%;
+}
+
+#backtotop {
+   display: none;
+   position: fixed;
+   bottom: 20px;
+   right: 30px;
+   z-index: 99;
+   font-size: 40px;
+   outline: none;
+   background-color: $parentbackground;
+   color: $title;
+   border: solid;
+   border-width: 1px;
+   border-color: $parentbackground;
+   border-radius: 10px;
+   transition: all .2s ease-in-out;
+}
+
+#backtotop:hover {
+   color: $word;
+   transform: scale(2);
+}
